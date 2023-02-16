@@ -43,7 +43,7 @@ class Request {
       this.interceptors?.responseInterceptCatch
     )
   }
-  request<T>(config: RequestConfig<AxiosRequestConfig, T>): Promise<T> {
+  request<T>(config: RequestConfig<T>): Promise<T> {
     return new Promise((resolve, reject) => {
       // 对单个请求进行拦截
       // 请求前拦截
@@ -67,7 +67,7 @@ class Request {
     })
   }
 
-  get<T = Res>(config: RequestConfig<AxiosRequestConfig, T>): Promise<T> {
+  get<T = Res>(config: RequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: 'get' })
   }
 }
