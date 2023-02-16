@@ -1,5 +1,4 @@
-#!/bin/echo
+#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-echo -e "\033[31m前端斟茶兵\033[0m"
 
 npx --no-install commitlint --edit
