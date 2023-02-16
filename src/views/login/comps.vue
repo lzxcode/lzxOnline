@@ -17,8 +17,8 @@ export default defineComponent({
     //不写类型会自动推导
     // ref() 不写就是any
     // let component = ref() 然后在templete上加ref setup返回  然后就可以component.value拿到组件实例
-    const ab = reactive({ lzx: 'lzx' });
-    const ab1 = reactive({ ...ab });
+    const ab = reactive({ lzx: 'lzx' })
+    const ab1 = reactive({ ...ab })
     const test1 = ref(test)
     function click() {
       test1.value.lzx = 'lzx1234345676'

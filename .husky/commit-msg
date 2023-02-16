@@ -1,5 +1,5 @@
-#!/bin/echo
+#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-echo -e "\033[字背景颜色；文字颜色m字符串\033[0m"
+echo -e "\033[31m前端斟茶兵\033[0m"
 
 npx --no-install commitlint --edit
