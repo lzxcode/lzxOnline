@@ -1,0 +1,11 @@
+{
+  "data": {
+    "text": "数据展示",
+    "items": [
+      {
+        "link": "/autoScroll",
+        "text": "自动滚动"
+      }
+    ]
+  }
+}
