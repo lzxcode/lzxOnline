@@ -2,12 +2,12 @@
 layout: home
 
 title: lzx
-titleTemplate: 一个Vue3组件库
+titleTemplate: 一个Vue3测试组件库
 
 hero:
   name: zooy
   text: vue2、3组件库
-  tagline: 随手写的组件库
+  tagline: lzx自定义组件库
   actions:
     - theme: brand
       text: 开始
