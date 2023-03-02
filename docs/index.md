@@ -7,7 +7,7 @@ titleTemplate: 一个Vue3测试组件库
 hero:
   name: zooy
   text: vue2、3组件库
-  tagline: lzx自定义测试组件库
+  tagline: lzx自定义测试jenkins组件库
   actions:
     - theme: brand
       text: 开始
