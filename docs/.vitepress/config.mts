@@ -1,7 +1,7 @@
 import { sidebar } from './pressConfig'
 
 export default {
-  base: '/mobile/',
+  base: '/components/',
   themeConfig: {
     siteTitle: false,
     logo: "/logo.jpg",
