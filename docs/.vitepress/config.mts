@@ -10,6 +10,6 @@ export default {
       { text: "组件", link: "mdFile/examples/autoScroll" },
     ],
     sidebar,
-    socialLinks: [{ icon: "github", link: "https://gitee.com/geeksdidi" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/lzxcode/lzxOnline" }],
   },
 };
