@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: lzx组件
+title: lzx
 titleTemplate: 一个Vue3测试组件库
 
 hero:
