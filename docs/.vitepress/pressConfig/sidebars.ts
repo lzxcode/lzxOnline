@@ -1,13 +1,15 @@
 import { ensureLang } from "../utils/lang";
-import guideLocale from "../json/pages/guide.json";
-import componentLocale from "../json/pages/components.json";
+let guideLocale: entri = require("../json/pages/guide.json");
+let componentLocale: entri = require("../json/pages/components.json");
 
 type Item = {
-  text: string;
+  text?: string;
   items?: Item[];
   link?: string;
 };
-
+type entri = {
+  [x: string]: Item;
+};
 function getGuideSidebar() {
   return Object.values(
     Object.fromEntries(
@@ -24,7 +26,7 @@ function getComponentsSideBar() {
     Object.fromEntries(
       Object.entries(componentLocale).map(([lang, val]) => [
         lang,
-        mapPrefix(val, "mdFile/",'examples'),
+        mapPrefix(val, "mdFile/", "examples"),
       ])
     )
   );
@@ -45,10 +47,8 @@ function mapPrefix(item: Item, lang: string, prefix = "") {
 const getSidebars = () => {
   return {
     "/mdFile/guide/": getGuideSidebar(),
-    '/mdFile/examples/': getComponentsSideBar(),
+    "/mdFile/examples/": getComponentsSideBar(),
   };
 };
-
-console.log(getComponentsSideBar()[0].items);
 
 export const sidebar = getSidebars();

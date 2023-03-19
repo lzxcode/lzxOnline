@@ -12,10 +12,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "markdown-it": "^13.0.1"
+    "highlight.js": "^11.7.0",
+    "markdown-it": "^13.0.1",
+    "sass": "^1.59.2",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.48",
-    "markdown-it-container": "^3.0.0"
+    "chalk": "^4.1.2",
+    "consola": "^2.15.3",
+    "escape-html": "^1.0.3",
+    "fast-glob": "^3.2.11",
+    "lzooxyue": "^0.0.7",
+    "markdown-it-container": "^3.0.0",
+    "prismjs": "^1.29.0",
+    "unocss": "0.33.5",
+    "vitepress": "1.0.0-alpha.48"
   }
 }
