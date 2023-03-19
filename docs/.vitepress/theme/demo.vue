@@ -44,7 +44,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { computed, defineAsyncComponent, ref } from "vue";
 // @ts-ignore
 const modules = import.meta.glob("../../**/*.vue");
@@ -78,7 +78,7 @@ export default {
       hover.value = isExpanded.value;
     };
     // 复制代码
-    const onCopy = async (e: any) => {
+    const onCopy = async (e) => {
       try {
         navigator.clipboard.writeText(decodedCodeStr.value);
         const el = e.target;
