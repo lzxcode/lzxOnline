@@ -91,7 +91,7 @@ export default {
         }, 2000);
         timeoutIdMap.set(el, timeoutId);
       } catch (err) {
-        console.log("复制代码失败");
+        console.log("复制代码失败",err);
       }
     };
     return {
