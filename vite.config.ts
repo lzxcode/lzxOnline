@@ -24,8 +24,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       extensions: [".jsx", ".ts", ".tsx", ".json", ".vue"],
       alias: {
-        "~": path.resolve("./packages"),
-        "@": path.resolve("./typings"),
+        "@": path.resolve("./src"),
       },
     },
     base: mode === "production" ? "/el-plus-powerful-table/" : "/",
@@ -42,11 +41,10 @@ export default defineConfig(({ mode }) => {
       // 是否开启 https
       https: false,
       proxy: {
-        //   '/api': {
-        // target: 'https://blog.csdn.net/weixin_45292658',
-        // changeOrigin: true,
-        // rewrite: path => path.replace(/^\/api/, '')
-        //   }
+        "/zooyue": {
+          target: "http://localhost:3333",
+          changeOrigin: true,
+        },
       },
     },
   };
@@ -82,7 +80,7 @@ export default defineConfig(({ mode }) => {
       Components({
         globs: ["**/src/*.{tsx|vue}"],
         include: [/\.(vue|tsx)$/, /\.vue\?vue/],
-      })
+      }),
     ];
     return {
       ...common,

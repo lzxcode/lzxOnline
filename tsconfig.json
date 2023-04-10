@@ -7,21 +7,21 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
     "paths": {
-      "~/*": [
-        "./packages/*"
-      ],
-      "@/*": [
-        "./typings/*"
-      ]
+      "~/*": ["./packages/*"],
+      "@/*": ["src/*"]
     },
-    "types": ["unplugin-vue-macros/macros-global" /* ... */]
+    "types": [
+      "unplugin-vue-macros/macros-global",
+      "node",
+      "element-plus/global"
+    ]
   },
-  "include": ["./packages/**/*"],
+  "include": ["./packages/**/*", "src/**/*", "env.d.ts"]
   // "references": [{ "path": "./tsconfig.node.json" }],
 }
