@@ -7,6 +7,8 @@ import { MarkdownTransform } from "./.vitepress/utils/markdown-transform";
 
 export default defineConfig(async ({ mode }) => {
   return {
-    // plugins: [MarkdownTransform()],
+    alias: {
+      "./runtimeConfig": "./runtimeConfig.browser",
+    },
   };
 });
