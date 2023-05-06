@@ -1,6 +1,6 @@
-import { defineComponent as s, ref as n, onMounted as f, createVNode as e, Fragment as g } from "vue";
+import { defineComponent as s, ref as l, onMounted as f, createVNode as e, Fragment as g } from "vue";
 import "./style.scss.mjs";
-import y from "./hooks/scroll.mjs";
+import p from "./hooks/scroll.mjs";
 const b = s({
   name: "autoScroll",
   props: {
@@ -13,24 +13,24 @@ const b = s({
       default: 200
     }
   },
-  setup(t, {
-    slots: o
+  setup(n, {
+    slots: t
   }) {
     let {
       autoScroll: a
-    } = y;
-    const u = n(0), i = n(3);
-    let d, c, l;
-    const m = n(0);
+    } = p;
+    const u = l(0), i = l(3);
+    let d, c, o;
+    const m = l(0);
     return f(() => {
-      d = document.getElementById("content"), c = document.getElementById("body"), l = document.getElementsByClassName("scrollItem")[0], console.log(t.mode, 123456), m.value = l.offsetHeight, t.mode == "auto" && a(d, c, l, u, m, i);
+      d = document.getElementById("content"), c = document.getElementById("body"), o = document.getElementsByClassName("scrollItem")[0], m.value = o.offsetHeight, n.mode == "auto" && a(d, c, o, u, m, i);
     }), () => {
       var r;
       return e(g, null, [e("div", {
         id: "content",
         class: "content",
         style: {
-          height: `${t.height}px`,
+          height: `${n.height}px`,
           overflow: "hidden"
         }
       }, [e("div", {
@@ -38,7 +38,7 @@ const b = s({
         class: "body"
       }, [e("div", {
         class: "scrollItem"
-      }, [(r = o.default) == null ? void 0 : r.call(o)])])])]);
+      }, [(r = t.default) == null ? void 0 : r.call(t)])])])]);
     };
   }
 });

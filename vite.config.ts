@@ -27,7 +27,6 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve("./src"),
       },
     },
-    base: mode === "production" ? "/el-plus-powerful-table/" : "/",
     // 控制台打印
     // logLevel: "silent",
     server: {

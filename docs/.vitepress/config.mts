@@ -26,7 +26,7 @@ const buildTransformers = () => {
   return transformers;
 };
 export default {
-  base: "/components/",
+  base: "/components",
   themeConfig: {
     siteTitle: false,
     logo: "/logo.jpg",
