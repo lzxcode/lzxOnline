@@ -27,7 +27,6 @@ const autoScroll = defineComponent({
       scrollItem = document.getElementsByClassName("scrollItem")[0] as HTMLElement;
 
       // scroolItemHeight 记录高度 因为removeChild DOM之后 DOM依旧被引用会存在 但是高度缺变化为0了
-      console.log(props.mode, 123456);
 
       scroolItemHeight.value = scrollItem.offsetHeight;
       if (props.mode == "auto") {

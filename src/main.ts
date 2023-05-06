@@ -7,7 +7,7 @@ import "./utils/system/injectCss";
 import "./assets/iconfont/style.css"
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-
+import "./utils/network/websocket"
 
 let app = createApp(App);
 app.use(ElementPlus)

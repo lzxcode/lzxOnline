@@ -5,6 +5,7 @@ import {
   onMounted,
   ref
 } from "./chunk-B7UOCPZH.js";
+import "./chunk-JMUPIC2K.js";
 
 // node_modules/lzooxyue/es/components/autoScroll/src/hooks/scroll.mjs
 var r = function(l, e2, i, t, a2, f) {

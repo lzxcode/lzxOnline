@@ -1,23 +1,44 @@
 {
   "hash": "855463e4",
-  "browserHash": "9ef13015",
+  "browserHash": "be16285b",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "3d8d9396",
+      "fileHash": "ecde7498",
       "needsInterop": false
     },
     "lzooxyue": {
       "src": "../../../node_modules/lzooxyue/es/index.mjs",
       "file": "lzooxyue.js",
-      "fileHash": "0b9075db",
+      "fileHash": "8ee00686",
+      "needsInterop": false
+    },
+    "unocss": {
+      "src": "../../../node_modules/unocss/dist/index.mjs",
+      "file": "unocss.js",
+      "fileHash": "20e29894",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-B7UOCPZH": {
       "file": "chunk-B7UOCPZH.js"
+    },
+    "dist-VW6P3MQS": {
+      "file": "dist-VW6P3MQS.js"
+    },
+    "chunk-FL6YUOIH": {
+      "file": "chunk-FL6YUOIH.js"
+    },
+    "node-loader-F4COVVXK": {
+      "file": "node-loader-F4COVVXK.js"
+    },
+    "chunk-EZRO5OEM": {
+      "file": "chunk-EZRO5OEM.js"
+    },
+    "chunk-JMUPIC2K": {
+      "file": "chunk-JMUPIC2K.js"
     }
   }
 }

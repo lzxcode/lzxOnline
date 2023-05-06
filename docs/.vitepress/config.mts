@@ -1,6 +1,5 @@
 import { sidebar, mdPlugin } from "./pressConfig";
 import demoblock from "vitepress-demoblock";
-
 const buildTransformers = () => {
   const transformer = () => {
     return {
