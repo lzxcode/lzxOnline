@@ -16,7 +16,7 @@
 通过 height 属性设置滚动高度，若不设置则默认 200px
 
 :::demo
-autoScroll/basic
+components/autoScroll/basic
 :::
 
 # API

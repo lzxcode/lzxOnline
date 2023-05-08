@@ -44,11 +44,11 @@ export const mdPlugin = (md: MarkdownIt) => {
         let file = "";
         if (sourceFileToken.type === "inline") {
           file = fs.readFileSync(
-            path.resolve(docRoot, "examples/components", `${sourceFile}.vue`),
+            path.resolve(docRoot, "examples/", `${sourceFile}.vue`),
             "utf-8"
           );
         }
-        source = `../../examples/components/${sourceFile}.vue`;
+        source = `../../examples/${sourceFile}.vue`;
 
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`);
         return `<demo codePath=${source} htmlStr=${encodeURIComponent(

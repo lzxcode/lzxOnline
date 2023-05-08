@@ -1,0 +1,11 @@
+{
+  "intro": {
+    "text": "识别",
+    "items": [
+      {
+        "text": "颜色拾取",
+        "link": "/primaryColor"
+      }
+    ]
+  }
+}

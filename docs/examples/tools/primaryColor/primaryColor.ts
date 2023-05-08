@@ -1,8 +1,10 @@
+import { promises } from "dns";
+
 interface colorObj {
   [index: string]: number;
 }
 
-export default function (imgSrc: string) {
+export default function (imgSrc: string): Promise<string> {
   return new Promise((resolve) => {
     const canvasContent = document.createElement("canvas");
     const context = canvasContent.getContext("2d");
@@ -14,8 +16,9 @@ export default function (imgSrc: string) {
     img.onload = function () {
       canvasContent.width = img.width;
       canvasContent.height = img.height;
-      context?.drawImage(img, img.width, img.height);
+      context?.drawImage(img, 0, 0);
       var data = context.getImageData(0, 0, img.width, img.height).data;
+
       let colorObj: colorObj = {};
       let level = 1;
       if (data.length > 100000) {
@@ -44,7 +47,7 @@ export default function (imgSrc: string) {
         .sort((a, b) => b[1] - a[1])
         .slice(0, 3);
       let mainColorArr = maxColor.map((colorItem) => colorItem[0]);
-      resolve(mainColorArr)
+      resolve(mainColorArr[0]);
     };
   });
 }

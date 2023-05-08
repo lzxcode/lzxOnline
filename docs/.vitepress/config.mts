@@ -1,5 +1,4 @@
 import { sidebar, mdPlugin } from "./pressConfig";
-import demoblock from "vitepress-demoblock";
 const buildTransformers = () => {
   const transformer = () => {
     return {
@@ -26,14 +25,14 @@ const buildTransformers = () => {
   return transformers;
 };
 export default {
-  base: "/components",
+  base: "/components/",
   themeConfig: {
     siteTitle: false,
     logo: "/logo.jpg",
     nav: [
       { text: "指南", link: "mdFile/guide/installation" },
       { text: "组件", link: "mdFile/components/autoScroll" },
-      { text: "工具", link: "mdFile/tools/mainColor" },
+      { text: "工具", link: "mdFile/tools/primaryColor" },
     ],
     sidebar,
     socialLinks: [

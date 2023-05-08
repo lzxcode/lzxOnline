@@ -10,7 +10,7 @@
     "strict": true,
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "lib": ["WebWorker"]
+    "lib": ["WebWorker","DOM"]
   },
   "include": ["**/*", ".vitepress/**/*"]
 }
