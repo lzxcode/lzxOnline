@@ -1,19 +1,21 @@
 <template>
   <div class="content">
     <headNavbar></headNavbar>
+    <menuNavbar></menuNavbar>
     <router-view></router-view>
   </div>
   <i class="life-bianxie bottom_right circle" @click="addMenu"></i>
 </template>
 
 <script setup lang="ts">
-import {useRouter} from "vue-router"
+import { useRouter } from "vue-router";
 import getOsInfo from "@/utils/system/getOs";
 import headNavbar from "./headNavbar/index.vue";
+import menuNavbar from "./menu/index.vue";
 
-let router = useRouter()
+let router = useRouter();
 function addMenu() {
- router.push("/system/addMenu")
+  router.push("/system/addMenu");
 }
 </script>
 

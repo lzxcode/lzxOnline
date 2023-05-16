@@ -1,30 +1,34 @@
 <template>
   <div>
     <el-input v-model="params.theme" placeholder=""></el-input>
-    <el-input
-      v-model="params.content"
-      type="textarea"
-      placeholder=""
-    ></el-input>
     <el-button type="primary" @click="add">增加</el-button>
+
+    <el-input v-model="id" placeholder=""></el-input>
+    <el-button type="primary" @click="remove">删除</el-button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive } from "vue";
-import { getMenu } from "@/network/system/menuAdd";
+import { reactive, ref } from "vue";
+import { addMenu, deleteMenu } from "@/network/system/menu";
 type params = {
   theme: string;
-  content: string;
 };
-const params: params = reactive({ theme: "", content: "" });
+const params = reactive<params>({ theme: "" });
+
+let id = ref("");
 
 function add() {
-  getMenu(params).then((res) => {
+  addMenu(params).then((res) => {
     console.log(res.message);
   });
 }
 
+function remove() {
+  deleteMenu({ theme: id.value }).then((res) => {
+    console.log(res.message);
+  });
+}
 </script>
 
 <style scoped lang="sass"></style>

@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
+
+// 表内容字段
 const schema = new mongoose.Schema({
-  name: { type: String },
+  theme: { type: String },
 });
 
-module.exports = mongoose.model('Category',schema)
+// 读取创建分类表
+
+module.exports = mongoose.model("Category", schema);

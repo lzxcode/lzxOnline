@@ -73,6 +73,9 @@ class Request<resInfo = Res> {
   post<T = resInfo>(config: RequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: "post" });
   }
+  delete<T = resInfo>(config: RequestConfig<T>): Promise<T> {
+    return this.request<T>({ ...config, method: "delete" });
+  }
 }
 
 export default Request;

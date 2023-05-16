@@ -8,16 +8,15 @@ const router = express.Router();
     let files = fs.readdirSync(path);
     files.forEach((val, index) => {
       let fPath = join(path, val);
-
       let stats = fs.statSync(fPath);
       if (stats.isDirectory()) finder(fPath);
       if (stats.isFile() && val !== "index.js") {
-        require("../" + fPath)(router);
+        require(fPath)(router);
       }
     });
   }
   finder(startPath);
-})("./routes");
+})(__dirname);
 
 module.exports = (app) => {
   app.use("/zooyue", router);
